@@ -46,8 +46,8 @@ New features available in Java SE 14. These are the features added to JLS in the
 				""";
 </pre>
 
-## Java 14 API
-New features available in Java SE 14. These are the features added to JLS in the versions later to Java SE 11. Most frequently used features will be listed here. //TDOO
+## Java 17 API
+New features available in Java SE 17. These are the features added to JLS in the versions later to Java SE 17. Most frequently used features will be listed here. //TDOO
 
 //TODO
 To insert the screenshots into README for quick illustration. Screenshots are already in `assets` directory.

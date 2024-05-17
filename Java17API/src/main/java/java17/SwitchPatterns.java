@@ -31,7 +31,7 @@ public class SwitchPatterns {
 		return formatted;
 	}
 
-	// Java 17 way
+	//TODO Check if it is Java 17+ way or only a Java 20+ facility
 	static String formatterPatternSwitch(Object o) {
 		return switch(o) {
 		case Integer i -> String.format("Integer %d", i);
@@ -44,12 +44,12 @@ public class SwitchPatterns {
 
 	// Java 17 way
 	static void testTriangle(Shape s) {
-		switch(s) {
-		case Triangle t && (t.calculateArea() > 10) -> System.out.println("Big triangle");
-		default -> System.out.println("Not a big triangle");
+		if(s instanceof Triangle t && t.calculateArea() > 10)
+			System.out.println("Big triangle");
+		else
+			System.out.println("Not a big triangle");
 		}
 	}
-}
 
 class Triangle extends Shape {
 	int a,b,c;
