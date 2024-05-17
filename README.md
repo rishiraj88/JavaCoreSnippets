@@ -45,3 +45,34 @@ New features available in Java SE 14. These are the features added to JLS in the
 				Fazit: Es lohnt sich Firmen-Bewertungen zu checken
 				""";
 </pre>
+
+## Java 14 API
+New features available in Java SE 14. These are the features added to JLS in the versions later to Java SE 11. Most frequently used features will be listed here. //TDOO
+
+//TODO
+To insert the screenshots into README for quick illustration. Screenshots are already in `assets` directory.
+
+## Java Core Snippets
+Code fragments and executable programs testing many variants and conditions with standard language features of Java API. Some of the `.java` files here are:
+- ArrayIntersection.java
+- DefaultElementValue.java
+- ExceptionsFinally.java
+- FindDuplicatesInArrayByMap.java
+- FindDuplicatesInArrayByStream.java
+- Main.java
+- MainInterface.java
+- MedianOfTwoArrays.java
+- SecondLargest.java
+- SingleInArray.java
+- StreamCollectMethods.java
+- SuperThisChild.java
+- ZeroAndNonZero.java
+- innerclasses/{InnerClassInitInOuterClass.java}
+- stream/{Address.java  Customer.java  StreamMappingDemo.java}
+
+## Gists
+Guidelines on the preferred usage of major Java 8 features and API methods:
+- Java 8 DateTime code samples.md
+- Java 8 Functional Interfaces in Java API.md
+- Java Concurrency API.md
+- Java Stream collector-s methods.md
