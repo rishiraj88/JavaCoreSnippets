@@ -14,3 +14,34 @@ New features available in Java SE 11. These are the features added to JLS in the
 }`
 - A number of new methods foster our most-loved class `java.lang.String`. These are: `isBlank()`, `strip()`, `stripLeading()`, `stripTrailing()`, `repeat(intCount)`
 
+## Java 14 API
+New features available in Java SE 14. These are the features added to JLS in the versions later to Java SE 11. Most frequently used features are:
+- Enhanced `instanceof` operator for safe type conversion: Now use `if (obj instanceof String str)` instead of `if (obj instanceof String)` to get a pre-cooked variable `str` of type `String`, for example, to utilise inside the concerned code block.
+- More explanatory NullPointerException message. Run the super-method `main` of `NullPointerExceptionPlus` to get `Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java14.RoleClass.getPrivileges()" is null
+	at java14.NullPointerExceptionPlus.main(NullPointerExceptionPlus.java:7)
+`
+- Record as a Type: a smarter tool to fulfill the need of final classes. Example: `record UserRecord(String name, String userId, int pin) {}`
+- More consice `switch`. It returns a value, so it is aptly called a switch expression. Example:
+`return switch(inputNumber) {
+		case 0 -> "zero";
+		case 1,3,5,7,9 -> "odd";
+		case 2,4,6,8,10 -> "even";
+		default -> "Go take some rest.";		
+};`
+- Text block to assign pre-formatted, with indentation, literal value to a String reference. The value can be supplied without using a reference variable, too. Example:
+`String strTextBlock = """
+				Das sind die 10 besten Arbeitgeber:innen Deutschlands
+				    Platz 1: dm-drogerie markt GmbH + Co. KG
+				    Platz 2: Techniker Krankenkasse
+				    Platz 3: Ford-Werke GmbH
+				    Platz 4: Porsche AG
+				    Platz 5: Evonik Industries AG
+				    Platz 6: Merck KgaA
+				    Platz 7: Bayer AG
+				    Platz 8: BMW Group
+				    Platz 9: Deloitte
+				    Patz 10: Roche Deutschland Holding GmbH
+				Und diese Arbeitgeber:innen sind f�r Frauen am besten
+				Fazit: Es lohnt sich Firmen-Bewertungen zu checken
+				""";
+`
