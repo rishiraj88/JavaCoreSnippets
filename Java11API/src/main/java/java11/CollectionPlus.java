@@ -30,6 +30,7 @@ public class CollectionPlus {
 
 		// JDK 8
 		// Collection.stream()
+		// Stream.toArray(IntFunction<A[]> generator);
 		//integerArr = integerList.stream().toArray(size -> new Integer[size]);
 
 		// JDK 8
