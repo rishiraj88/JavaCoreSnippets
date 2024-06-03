@@ -6,7 +6,7 @@ New features available in Java SE 11. These are the features added to JLS in the
 - Method `T[] Collection.toArray(IntFunction<T[]> generator )` to use instead of first generating a stream and then invoking `A[] Stream.toArray(IntFunction<A[]> generator);`
 ![Collection toArray(generator)](./assets/java11features/01-Collection-toArray.png)
 - Methods `String Files.readString(Path.of(filePath))` and `Path Files.writeString(Path.of(strFilePath),"string content", StandardOpenOption)`.
-![Files methods: read() and write()](./assets/java11features/02-FilesRead-FilesWrite.png)
+![Files methods: readString() and writeString()](./assets/java11features/02-FilesReadString-FilesWriteString.png)
 - Class `java.net.http.HttpClient` capable of making GET, PUT, POST requests easily.
 ![Convenient HttpClient](./assets/java11features/03-HttpClient-1.png)
 ![Convenient HttpClient](./assets/java11features/03-HttpClient-2.png)
