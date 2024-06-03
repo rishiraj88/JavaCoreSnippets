@@ -71,6 +71,7 @@ New features available in Java SE 17. These are the features added to JLS in the
 - deprecate the Applet API for removal
 - strongly encapsulate JDK internals
 - pattern matching for switch (preview)
+![Pattern matching with switch](./assets/java17features/patternMatchingWithSwitch.png)
 - remove RMI activation
 - sealed classes
 - remove the experimental AOT and JIT compilers
