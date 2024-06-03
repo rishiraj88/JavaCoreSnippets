@@ -4,15 +4,24 @@ programs and code snippets to showcase the might of Java platform (as of Java AP
 ## Java 11 API
 New features available in Java SE 11. These are the features added to JLS in the versions later to Java SE 8. Most frequently used features are:
 - Method `T[] Collection.toArray(IntFunction<T[]> generator )` to use instead of first generating a stream and then invoking `A[] Stream.toArray(IntFunction<A[]> generator);`
+![Collection toArray(generator)](./assets/java11features/01-Collection-toArray.png)
 - Methods `String Files.readString(Path.of(filePath))` and `Path Files.writeString(Path.of(strFilePath),"string content", StandardOpenOption)`.
+![Files methods: read() and write()](./assets/java11features/02-FilesRead-FilesWrite.png)
 - Class `java.net.http.HttpClient` capable of making GET, PUT, POST requests easily.
+![Convenient HttpClient](./assets/java11features/03-HttpClient-1.png)
+![Convenient HttpClient](./assets/java11features/03-HttpClient-2.png)
 - Running a Java class directly with `java` command as in `$ java MainClass.java` without generating a `.class` file a priori.
+![Running Java program with java interpreter command directly](./assets/java11features/04-RunWith-java.png)
 - Usage of `var` keyword for variable declaration in lambda expressions: ` (@Nonnull var a,@Nullable var b) -> System.out.println(a + b)`
+![Local var declaration in lambda](./assets/java11features/05-Local-varInLambda.png)
 - Method `Optional.isEmpty()` to check if the contained value is null. Its definition straight from Java API is:
 `public boolean isEmpty() {
         return value == null;
 }`
+![Optional isEmpty() method](./assets/java11features/06-Optional-isEmptyMethod.png)
 - A number of new methods foster our most-loved class `java.lang.String`. These are: `isBlank()`, `strip()`, `stripLeading()`, `stripTrailing()`, `repeat(intCount)`
+![New methods in String class](./assets/java11features/07-StringMethods-1.png)
+![New methods in String class](./assets/java11features/07-StringMethods-2.png)
 
 ## Java 14 API
 New features available in Java SE 14. These are the features added to JLS in the versions later to Java SE 11. Most frequently used features are:
