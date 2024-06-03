@@ -17,10 +17,14 @@ New features available in Java SE 11. These are the features added to JLS in the
 ## Java 14 API
 New features available in Java SE 14. These are the features added to JLS in the versions later to Java SE 11. Most frequently used features are:
 - Enhanced `instanceof` operator for safe type conversion: Now use `if (obj instanceof String str)` instead of `if (obj instanceof String)` to get a pre-cooked variable `str` of type `String`, for example, to utilise inside the concerned code block.
+![InstanceOf Pattern Matching](./assets/java14features/01-InstanceOfPatternMatching.png)
 - More explanatory NullPointerException message. Run the super-method `main` of `NullPointerExceptionPlus` to get:
 <pre>Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java14.RoleClass.getPrivileges()" is null
 	at java14.NullPointerExceptionPlus.main(NullPointerExceptionPlus.java:7)</pre>
+![NullPointerException](./assets/java14features/02-NullPointerException-1.png)
+![NullPointerException](./assets/java14features/02-NullPointerException-2.png)
 - Record as a Type: a smarter tool to fulfill the need of final classes. Example: `record UserRecord(String name, String userId, int pin) {}`
+![Record as a Type](./assets/java14features/03-Record.png)
 - More consice `switch`. It returns a value, so it is aptly called a switch expression. Example:
 <pre>return switch(inputNumber) {
 		case 0 -> "zero";
@@ -28,6 +32,7 @@ New features available in Java SE 14. These are the features added to JLS in the
 		case 2,4,6,8,10 -> "even";
 		default -> "Go take some rest.";		
 };</pre>
+![switch Expression](./assets/java14features/04-SwitchExpression.png)
 - Text block to assign pre-formatted, with indentation, literal value to a String reference. The value can be supplied without using a reference variable, too. Example:
 <pre>String strTextBlock = """
 				Das sind die 10 besten Arbeitgeber:innen Deutschlands
@@ -45,6 +50,8 @@ New features available in Java SE 14. These are the features added to JLS in the
 				Fazit: Es lohnt sich Firmen-Bewertungen zu checken
 				""";
 </pre>
+![TextBlock for preformatted String literals](./assets/java14features/05-TextBlock-1.png)
+![TextBlock for preformatted String literals](./assets/java14features/05-TextBlock-2.png)
 
 ## Java 17 API
 New features available in Java SE 17. These are the features added to JLS in the versions later to Java SE 17. Most frequently used features are listed below:
