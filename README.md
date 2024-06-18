@@ -64,8 +64,8 @@ New features available in Java SE 14. These are the features added to JLS in the
 
 ## Java 17 API
 New features available in Java SE 17. These are the features added to JLS in the versions later to Java SE 17. Most frequently used features are listed below:
-- restore always-Strict floating-point semantics
-- enhanced pseudo-random number generators
+- restore always-Strict floating-point semantics: It ensures same results of floating-point calculations on every platform.
+- enhanced pseudo-random number generators: class java.util.Random implements interface java.util.random.RandomGenerator. Such new implementations of pseudo random number generators allow for better support for stream-based programming.
 - new macOS rendering pipeline
 - macOS/AArch64 port
 - deprecate the Applet API for removal
