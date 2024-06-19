@@ -1,30 +1,31 @@
-# JavaCoreSnippets
-programs and code snippets to showcase the might of Java platform (as of Java API), algorithms implemented using Java language and the types and method to refer and use in other projects.
+# Java Core Snippets
+- programs and code snippets to showcase the might of Java platform (as of Java API), algorithms implemented using Java language, and the types & methods to refer & use in other projects.  
 
-## Java 11 API
-New features available in Java SE 11. These are the features added to JLS in the versions later to Java SE 8. Most frequently used features are:
-- Method `T[] Collection.toArray(IntFunction<T[]> generator )` to use instead of first generating a stream and then invoking `A[] Stream.toArray(IntFunction<A[]> generator);`
-![Collection toArray(generator)](./assets/java11features/01-Collection-toArray.png)
-- Methods `String Files.readString(Path.of(filePath))` and `Path Files.writeString(Path.of(strFilePath),"string content", StandardOpenOption)`.
-![Files methods: readString() and writeString()](./assets/java11features/02-FilesReadString-FilesWriteString.png)
-- Class `java.net.http.HttpClient` capable of making GET, PUT, POST requests easily.
-![Convenient HttpClient](./assets/java11features/03-HttpClient-1.png)
-![Convenient HttpClient](./assets/java11features/03-HttpClient-2.png)
-- Running a Java class directly with `java` command as in `$ java MainClass.java` without generating a `.class` file a priori.
-![Running Java program with java interpreter command directly](./assets/java11features/04-RunWith-java.png)
-- Usage of `var` keyword for variable declaration in lambda expressions: ` (@Nonnull var a,@Nullable var b) -> System.out.println(a + b)`
-![Local var declaration in lambda](./assets/java11features/05-Local-varInLambda.png)
-- Method `Optional.isEmpty()` to check if the contained value is null. Its definition straight from Java API is:
-`public boolean isEmpty() {
-        return value == null;
-}`
-![Optional isEmpty() method](./assets/java11features/06-Optional-isEmptyMethod.png)
-- A number of new methods foster our most-loved class `java.lang.String`. These are: `isBlank()`, `strip()`, `stripLeading()`, `stripTrailing()`, `repeat(intCount)`
-![New methods in String class](./assets/java11features/07-StringMethods-1.png)
-![New methods in String class](./assets/java11features/07-StringMethods-2.png)
+- First of all, let's start with some of the updates and advancements in Java library (aptly called Java API).
 
-## Java 14 API
-New features available in Java SE 14. These are the features added to JLS in the versions later to Java SE 11. Most frequently used features are:
+## What's available in Java 17 API
+New features available in Java 17 over Java 14. Features, which are most notable and stand as the best candidates for frequent use, are listed below:
+- restore always-Strict floating-point semantics: It ensures same results of floating-point calculations on every platform.
+- enhanced pseudo-random number generators: class java.util.Random implements interface java.util.random.RandomGenerator. Such new implementations of pseudo random number generators allow for better support for stream-based programming.
+- new macOS rendering pipeline
+- macOS/AArch64 port
+- deprecate the Applet API for removal
+- strongly encapsulate JDK internals
+- pattern matching for switch (preview)
+![Pattern matching with switch](./assets/java17features/patternMatchingWithSwitch.png)
+- remove RMI activation
+- sealed classes
+- remove the experimental AOT and JIT compilers
+- deprecate the Security Manager for removal
+- Foreign Function and Memory API (incubator)
+- Vector API (second incubator)
+- context-specific deserialization filters
+
+### TODO
+To add the screenshots for Java 17 features to README for quick illustration. Screenshots are already in `assets` directory.
+
+## What's available in Java 14 API
+The additional and formally introduced features available in Java 14. These are the features added to JLS in the versions later to version 11. Most frequently used features are:
 - Enhanced `instanceof` operator for safe type conversion: Now use `if (obj instanceof String str)` instead of `if (obj instanceof String)` to get a pre-cooked variable `str` of type `String`, for example, to utilise inside the concerned code block.
 ![InstanceOf Pattern Matching](./assets/java14features/01-InstanceOfPatternMatching.png)
 - More explanatory NullPointerException message. Run the super-method `main` of `NullPointerExceptionPlus` to get:
@@ -62,26 +63,28 @@ New features available in Java SE 14. These are the features added to JLS in the
 ![TextBlock for preformatted String literals](./assets/java14features/05-TextBlock-1.png)
 ![TextBlock for preformatted String literals](./assets/java14features/05-TextBlock-2.png)
 
-## Java 17 API
-New features available in Java SE 17. These are the features added to JLS in the versions later to Java SE 17. Most frequently used features are listed below:
-- restore always-Strict floating-point semantics: It ensures same results of floating-point calculations on every platform.
-- enhanced pseudo-random number generators: class java.util.Random implements interface java.util.random.RandomGenerator. Such new implementations of pseudo random number generators allow for better support for stream-based programming.
-- new macOS rendering pipeline
-- macOS/AArch64 port
-- deprecate the Applet API for removal
-- strongly encapsulate JDK internals
-- pattern matching for switch (preview)
-![Pattern matching with switch](./assets/java17features/patternMatchingWithSwitch.png)
-- remove RMI activation
-- sealed classes
-- remove the experimental AOT and JIT compilers
-- deprecate the Security Manager for removal
-- Foreign Function and Memory API (incubator)
-- Vector API (second incubator)
-- context-specific deserialization filters
+## Java 11 API
+The nice features available in Java 11 over our good old friend Java 8. Most notable additions are:
+- Method `T[] Collection.toArray(IntFunction<T[]> generator )` to use instead of first generating a stream and then invoking `A[] Stream.toArray(IntFunction<A[]> generator);`
+![Collection toArray(generator)](./assets/java11features/01-Collection-toArray.png)
+- Methods `String Files.readString(Path.of(filePath))` and `Path Files.writeString(Path.of(strFilePath),"string content", StandardOpenOption)`.
+![Files methods: readString() and writeString()](./assets/java11features/02-FilesReadString-FilesWriteString.png)
+- Class `java.net.http.HttpClient` capable of making GET, PUT, POST requests easily.
+![Convenient HttpClient](./assets/java11features/03-HttpClient-1.png)
+![Convenient HttpClient](./assets/java11features/03-HttpClient-2.png)
+- Running a Java class directly with `java` command as in `$ java MainClass.java` without generating a `.class` file a priori.
+![Running Java program with java interpreter command directly](./assets/java11features/04-RunWith-java.png)
+- Usage of `var` keyword for variable declaration in lambda expressions: ` (@Nonnull var a,@Nullable var b) -> System.out.println(a + b)`
+![Local var declaration in lambda](./assets/java11features/05-Local-varInLambda.png)
+- Method `Optional.isEmpty()` to check if the contained value is null. Its definition straight from Java API is:
+`public boolean isEmpty() {
+        return value == null;
+}`
+![Optional isEmpty() method](./assets/java11features/06-Optional-isEmptyMethod.png)
+- A number of new methods foster our most-loved class `java.lang.String`. These are: `isBlank()`, `strip()`, `stripLeading()`, `stripTrailing()`, `repeat(intCount)`
+![New methods in String class](./assets/java11features/07-StringMethods-1.png)
+![New methods in String class](./assets/java11features/07-StringMethods-2.png)
 
-//TODO
-To insert the screenshots into README for quick illustration. Screenshots are already in `assets` directory.
 
 ## Java Core Snippets
 Code fragments and executable programs testing many variants and conditions with standard language features of Java API. Some of the `.java` files here are:
@@ -107,3 +110,7 @@ Guidelines on the preferred usage of major Java 8 features and API methods:
 - Java 8 Functional Interfaces in Java API.md
 - Java Concurrency API.md
 - Java Stream collector-s methods.md
+
+## Notes
+- PoC implementations of the gists will keep on adding gradually.
+
