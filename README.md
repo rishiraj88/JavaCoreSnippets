@@ -3,6 +3,28 @@
 
 - First of all, let's start with some of the updates and advancements in Java library (aptly called Java API).
 
+
+## What's available in Java 21 API
+New features available in Java 21 which we missed in Java 17 and earlier versions. Features, which are most notable and stand as the best candidates for frequent use, are listed below:
+- Usage of `record` types in conditionals. Very useful with `if(reference instance Type)` tests.
+<pre>if(publicParameter instanceof SpecificType) {}</pre>
+- labels for `switch` cases. These are very similar to `instanceof` checks.
+<pre>
+case TierOne test -> future = test.callActionOne();
+case TierTwo test -> future = test.callActionTwo();
+</pre>
+- String literals (a preview feature) to build parameterized text strings. These are similar to string literals / template strings of modern JavaScript and f-strings of python. The template processor `STR` is automatically imported and is available to use without any explicit import or declaration. More template processors include `RAW` and `FMT`. Remember `"fmt"` of Go (Golang)?
+<pre>String vmUserName = localSystem.retrieveUserName();
+String helloVitrualWorld = STR."Hola \{vmUserName}";</pre>
+- One major pathchanger about Java Collection Framework is: the introduction of "sequenced collections": `SequencedCollection`, `SequencedSet` and `SequencedMap`.
+<pre>
+public interface SequencedCollection<E> extends Collection<E> // since 21
+public interface SequencedMap<K, V> extends Map<K, V> // since 21
+public interface SequencedSet<E> extends SequencedCollection<E>, Set<E> // since 21
+</pre>
+- My favorite as it is about security and encryption: Key Encapsulation Mechanism (KEP) to secure symmetric keys.
+- TODO: Add screenshots [Due 21-Jun-2024]
+
 ## What's available in Java 17 API
 New features available in Java 17 over Java 14. Features, which are most notable and stand as the best candidates for frequent use, are listed below:
 - restore always-Strict floating-point semantics: It ensures same results of floating-point calculations on every platform.
