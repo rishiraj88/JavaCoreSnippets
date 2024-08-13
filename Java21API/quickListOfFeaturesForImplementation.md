@@ -1,9 +1,9 @@
-String templates
+String templates (preview)
 Sequenced collections
 Record patterns
 Pattern matching for switch statements
-Unnamed patterns and unnamed variables
-Unnamed classes and instance main methods
+Unnamed patterns and unnamed variables (preview)
+Unnamed classes and instance main methods (preview)
 Virtual threads
 Generational ZGC (Z garbage collector)
 

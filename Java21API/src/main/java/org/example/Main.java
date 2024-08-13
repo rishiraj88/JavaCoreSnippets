@@ -1,17 +1,46 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import org.example.Product;
+
+import java.util.Locale;
+
+import static java.util.FormatProcessor.FMT;
+
 public class Main {
+
     public static void main(String[] args) {
-        // Press Alt+Eingabe with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-        // Press Umschalt+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-            // Press Umschalt+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Strg+F8.
-            System.out.println("i = " + i);
-        }
+
+        var product = new Product(1L, "Laptop", 1000.0);
+
+        // Concatenation using + operator
+        var string1 = "Product with id " + product.productId() + " is " +
+                product.name() + " and has price $" + product.price();
+
+        System.out.println(string1);
+
+        // Concatenation using StringBuilder
+        var string2 = new StringBuilder()
+                .append("Product with id ")
+                .append(product.productId())
+                .append(" is ")
+                .append(product.name())
+                .append(" and has price $")
+                .append(product.price())
+                .toString();
+
+        System.out.println(string2);
+
+        // Concatenation using String.format
+        var string3 = String.format(Locale.US,
+                "Product with id %s is %s" +
+                        " and has price $%.2f",
+                product.productId(), product.name(), product.price());
+
+        System.out.println(string3);
+
+        var string4 = FMT."Product is \{product.productId()}: \{product.name()}, priced at $%.2f\{product.price()}";
+        System.out.println(string4);
+
     }
+
 }
