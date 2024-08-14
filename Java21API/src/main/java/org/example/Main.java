@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.Product;
+import org.example.records.RecordPatternsWithInstanceof;
 
 import java.util.Locale;
 
@@ -42,6 +43,7 @@ public class Main {
         System.out.println(string4);
 
         CollectionSequences.testCollectionSequences();
+        RecordPatternsWithInstanceof.test();
     }
 
 }
