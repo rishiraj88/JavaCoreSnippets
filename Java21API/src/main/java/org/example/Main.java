@@ -41,6 +41,7 @@ public class Main {
         var string4 = FMT."Product is \{product.productId()}: \{product.name()}, priced at $%.2f\{product.price()}";
         System.out.println(string4);
 
+        CollectionSequences.testCollectionSequences();
     }
 
 }
