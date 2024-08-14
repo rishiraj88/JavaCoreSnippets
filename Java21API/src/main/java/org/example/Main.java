@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.Product;
 import org.example.records.RecordPatternsWithInstanceof;
+import org.example.virtualthreads.ExecutorImpl;
 
 import java.util.Locale;
 
@@ -44,6 +45,8 @@ public class Main {
 
         CollectionSequences.testCollectionSequences();
         RecordPatternsWithInstanceof.test();
+        //ExecutorImpl.withoutVirtualThreads();
+        ExecutorImpl.withVirtualThreadsInJava21();
     }
 
 }

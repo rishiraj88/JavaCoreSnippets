@@ -3,7 +3,6 @@
 
 - First of all, let's start with some of the updates and advancements in Java library (aptly called Java API).
 
-
 ## What's available in Java 21 API
 New features available in Java 21 which we missed in Java 17 and earlier versions. Features, which are most notable and stand as the best candidates for frequent use, are listed below:
 - Usage of `record` types in conditionals. Very useful with `if(reference instance Type)` tests.
@@ -23,7 +22,8 @@ public interface SequencedMap<K, V> extends Map<K, V> // since 21
 public interface SequencedSet<E> extends SequencedCollection<E>, Set<E> // since 21
 </pre>
 - My favorite as it is about security and encryption: Key Encapsulation Mechanism (KEP) to secure symmetric keys.
-- TODO: Add screenshots [Due 21-Jun-2024]
+- TODO: Add updated screenshots
+- Implementation examples are in the project code under `Java21API` along with the checklist of which of the features have been tested.
 
 ## What's available in Java 17 API
 New features available in Java 17 over Java 14. Features, which are most notable and stand as the best candidates for frequent use, are listed below:
