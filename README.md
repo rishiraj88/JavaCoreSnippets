@@ -1,5 +1,5 @@
 # Java Core Snippets
-- programs and code snippets to showcase the might of Java platform (as of Core Java API), algorithms implemented using Java language (out of JavaSE), and the types & methods to refer & use in other projects and repositories.  
+- programs and code snippets to showcase the might and versatility of Java platform (as of Core Java API), algorithms implemented using Java language (out of JavaSE), and the types & methods to refer & use in other projects and repositories.  
 
 - First of all, let's start with some of the updates and advancements in Java library (aptly called Java API).
 
