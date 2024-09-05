@@ -13,8 +13,7 @@ public class TextBlockVsString {
 				+ "    Platz 8: BMW Group\n"
 				+ "    Platz 9: Deloitte\n"
 				+ "    Patz 10: Roche Deutschland Holding GmbH\n"
-				+ "Und diese Arbeitgeber:innen sind f�r Frauen am besten\n"
-				+ "Fazit: Es lohnt sich Firmen-Bewertungen zu checken\n";
+				+ "Viel Glück!\n";
 		System.out.println(strTraditional);
 
 		String strTextBlock = """
@@ -29,8 +28,7 @@ public class TextBlockVsString {
 				    Platz 8: BMW Group
 				    Platz 9: Deloitte
 				    Patz 10: Roche Deutschland Holding GmbH
-				Und diese Arbeitgeber:innen sind f�r Frauen am besten
-				Fazit: Es lohnt sich Firmen-Bewertungen zu checken
+				Viel Glück!
 				""";
 		System.out.println(strTextBlock);
 	}
