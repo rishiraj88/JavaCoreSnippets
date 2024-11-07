@@ -2,17 +2,17 @@ package java14;
 
 public class InstanceofPatternMatching {
 	public static void main(String[] args) {
-		Object obj = (Object) "user1";
+		Object user = (Object) "rishiraj";
 
 		// Older approach
-		if (obj instanceof String) {
-			String str = (String) obj;
-			System.out.println(str + 2 + 3);
+		if (user instanceof String) {
+			String userName = (String) user;
+			System.out.println("User name is: " + userName);
 		}
 
 		// Java 14 approach and later
-		if (obj instanceof String str) {
-			System.out.println(str + 2 + 3);
+		if (user instanceof String userName) {
+			System.out.println("User name is: " + userName);
 		}
 
 	}
