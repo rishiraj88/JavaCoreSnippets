@@ -1,4 +1,4 @@
-# Implementations of Java 21 Features
+# Frequently Used Features Available with Java 21 (vs. Java 17)
 - String templates (preview): code available
 - Sequenced collections: code available
 - Record patterns with instanceof operator: code available
