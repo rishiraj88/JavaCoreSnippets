@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.Product;
 import org.example.records.RecordPatternsWithInstanceof;
 import org.example.virtualthreads.ExecutorImpl;
 
