@@ -2,7 +2,7 @@ package java14;
 
 public class InstanceofPatternMatching {
 	public static void main(String[] args) {
-		Object user = (Object) "rishiraj";
+		Object user = "rishiraj";
 
 		// Older approach
 		if (user instanceof String) {
@@ -10,7 +10,7 @@ public class InstanceofPatternMatching {
 			System.out.println("User name is: " + userName);
 		}
 
-		// Java 14 approach and later
+		// "Java 14 and later" approach
 		if (user instanceof String userName) {
 			System.out.println("User name is: " + userName);
 		}

@@ -4,10 +4,16 @@ import java.util.List;
 
 public class NullPointerExceptionPlus {
 	public static void main(String[] args) {
-		System.out.println(UserProfile.newInstance().getRoleClass().getPrivileges().toString());
+		System.out.println(
+				UserProfile.newInstance().getRoleClass().getPrivileges().toString()
+				/*The following descriptive NPE message is shown in Java 14 and later versions:
+				Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "java14.RoleClass.getPrivileges()" is null
+	at java14.NullPointerExceptionPlus.main(NullPointerExceptionPlus.java:8)
+
+				 */
+		);
 	}
 }
-
 
 class UserProfile {
 

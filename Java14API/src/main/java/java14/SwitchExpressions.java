@@ -10,8 +10,8 @@ public class SwitchExpressions {
 	}
 	
 	static String stateNumberClass(int inputNumber) {
-		// See the beauty and the brevity of code
-		// break; is not needed to exit the switch when a match has been made
+		// See the beauty and the brevity of code:
+		// "break;" is not needed to exit the switch construct when a matching block has been run
 		return switch(inputNumber) {
 		case 0 -> "zero";
 		case 1,3,5,7,9 -> "odd";

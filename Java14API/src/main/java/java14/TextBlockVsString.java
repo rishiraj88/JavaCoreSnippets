@@ -2,6 +2,7 @@ package java14;
 
 public class TextBlockVsString {
 	public static void main(String[] args) {
+		// Older style
 		String strArbeitgeber = "Das sind die 10 besten Arbeitgeber:innen Deutschlands\n"
 				+ "    Platz 1: dm-drogerie markt GmbH + Co. KG\n"
 				+ "    Platz 2: Techniker Krankenkasse\n"
@@ -16,6 +17,7 @@ public class TextBlockVsString {
 				+ "Viel Glück!\n";
 		System.out.println(strArbeitgeber);
 
+		// "Java 14+" style
 		String tbArbeitgeber = """
 				Das sind die 10 besten Arbeitgeber:innen Deutschlands
 				    Platz 1: dm-drogerie markt GmbH + Co. KG
