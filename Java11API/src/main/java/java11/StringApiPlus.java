@@ -10,31 +10,31 @@ public class StringApiPlus {
 		String s3 = " d ";
 
 		// isBlank()
-		System.out.println("String blank: " + s1.isBlank());
-		System.out.println("String blank: " + s2.isBlank());
-		System.out.println("String blank: " + s3.isBlank());
+		System.out.println("s1 blank: " + s1.isBlank());
+		System.out.println("s2 blank: " + s2.isBlank());
+		System.out.println("s3 blank: " + s3.isBlank());
 
 		// lines()
 		String s4 = "\nsdf sdfs\nsdfsdfs\nsdf sdf sd fs\n ";
-		s4.lines().forEach(line -> System.out.println("Line: " + line));
+		s4.lines().forEach(line -> System.out.println("Line in s4: >" + line+"<"));
 
 		// strip()
-		System.out.println("String strip:" + s1.strip() + ":End");
-		System.out.println("String strip:" + s2.strip() + ":End");
-		System.out.println("String strip:" + s3.strip() + ":End");
+		System.out.println("s1 stripped: >" + s1.strip() + "<");
+		System.out.println("s2 stripped: >" + s2.strip() + "<");
+		System.out.println("s3 stripped: >" + s3.strip() + "<");
 
 
 		// stripLeading()
-		System.out.println("String stripLeading:" + s1.stripLeading() + ":End");
-		System.out.println("String stripLeading:" + s2.stripLeading() + ":End");
-		System.out.println("String stripLeading:" + s3.stripLeading() + ":End");
+		System.out.println("s1 stripLeading: >" + s1.stripLeading() + "<");
+		System.out.println("s2 stripLeading: >" + s2.stripLeading() + "<");
+		System.out.println("s3 stripLeading: >" + s3.stripLeading() + "<");
 
 		// stripTrailing()
-		System.out.println("String stripTrailing:" + s1.stripTrailing() + ":End");
-		System.out.println("String stripTrailing:" + s2.stripTrailing() + ":End");
-		System.out.println("String stripTrailing:" + s3.stripTrailing() + ":End");
+		System.out.println("s1 stripTrailing: >" + s1.stripTrailing() + "<");
+		System.out.println("s2 stripTrailing: >" + s2.stripTrailing() + "<");
+		System.out.println("s3 stripTrailing: >" + s3.stripTrailing() + "<");
 
 		// repeat()
-		System.out.println("String repeat:" + s3.repeat(5));
+		System.out.println("s2 5 times repeated: >" + s3.repeat(5) +"<");
 	}
 }

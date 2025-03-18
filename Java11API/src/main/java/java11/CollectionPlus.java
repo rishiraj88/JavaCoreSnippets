@@ -28,16 +28,6 @@ public class CollectionPlus {
 		Integer[] integerArr = null;
 		String[] sArr = null;
 
-		// JDK 8
-		// Collection.stream()
-		// Stream.toArray(IntFunction<A[]> generator);
-		//integerArr = integerList.stream().toArray(size -> new Integer[size]);
-
-		// JDK 8
-		// Stream.toArray()
-		//System.out.println("Integer array: "+Arrays.toString(integerArr));
-		//sArr = sList.stream().toArray(size -> new String[size]);
-
 		// JDK 11
 		// Collection.toArray(IntFunction<T[]> generator )
 		integerArr = integerList.toArray(size -> new Integer[size]);
@@ -52,6 +42,16 @@ public class CollectionPlus {
 		sArr = sList.toArray(String[]:: new);
 		System.out.println("String array with List.toArray(String[]:: new): "+Arrays.toString(sArr));
 
+/*		// "JDK 8,9,10" style
+		// Collection.stream()
+		// Stream.toArray(IntFunction<A[]> generator);
+		integerArr = integerList.stream().toArray(size -> new Integer[size]);
+
+		// "JDK 8,9,10" style
+		// Stream.toArray()
+		//System.out.println("Integer array: "+Arrays.toString(integerArr));
+		sArr = sList.stream().toArray(size -> new String[size]);
+*/
 	}
 
 }

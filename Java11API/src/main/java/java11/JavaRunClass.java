@@ -2,7 +2,7 @@ package java11;
 /**
  * 
  * @author rishiraj
- *	to run the Java program with `java JavaRunClass.java` command form
+ *	to run the Java program with `java JavaRunClass.java` command in CLI
  */
 public class JavaRunClass {
 	public static void main(String[] args) {

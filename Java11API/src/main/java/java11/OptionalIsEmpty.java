@@ -5,7 +5,7 @@ import java.util.Random;
 
 /**
  * @author rishiraj
- * to demonstrate Optional.isEmpty() 
+ * to demonstrate Optional.isEmpty() method
  */
 public class OptionalIsEmpty {
 	@SuppressWarnings("rawtypes")
@@ -17,8 +17,7 @@ public class OptionalIsEmpty {
 			o = Optional.of(" ");
 			System.out.println("Optional set to hold a String value.");
 		}
-		//JDK 11
+		// java.util.Optional.isEmpty() method is available in JDK 11 and later
 		System.out.println("is empty?: "+o.isEmpty());
-		
 	}
 }
