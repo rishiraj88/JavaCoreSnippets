@@ -3,7 +3,7 @@
 
 - First of all, let's start with some of the updates and advancements in Java library (aptly called Java API).
 
-## What's available in Java 21 API
+## What's available in Java 24 API
 - improvement in performance and memory management
 -- Generational Shenandoah (garbage collector) ![JEP-404](https://openjdk.org/jeps/404)
 - security and cryptography
