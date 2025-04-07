@@ -5,28 +5,28 @@
 
 ## What's available in Java 24 API
 - improvement in performance and memory management
--- Generational Shenandoah (garbage collector) ![JEP-404](https://openjdk.org/jeps/404)
+    - Generational Shenandoah (garbage collector) ![JEP-404](https://openjdk.org/jeps/404)
 - security and cryptography
--- key derivation function API ![JEP-478](https://openjdk.org/jeps/478)
--- quantum-resistant DSA ![JEP-497](https://openjdk.org/jeps/497) and more ![JEP-496](https://openjdk.org/jeps/496)
+    - key derivation function API ![JEP-478](https://openjdk.org/jeps/478)
+    - quantum-resistant DSA ![JEP-497](https://openjdk.org/jeps/497) and more ![JEP-496](https://openjdk.org/jeps/496)
 - modernized Java APIs ![JEP-404](https://openjdk.org/jeps/404)
--- ahead-of-time class loading and linking ![JEP-483](https://openjdk.org/jeps/483)
--- class file API ![JEP-484](https://openjdk.org/jeps/484)
--- more flexible pipelines with stream gatherers ![JEP-485](https://openjdk.org/jeps/485)
+    - ahead-of-time class loading and linking ![JEP-483](https://openjdk.org/jeps/483)
+    - class file API ![JEP-484](https://openjdk.org/jeps/484)
+    - more flexible pipelines with stream gatherers ![JEP-485](https://openjdk.org/jeps/485)
 - JVM changes
--- compact object headers ![JEP-450](https://openjdk.org/jeps/450)
--- restricted use of JNI ![JEP-472](https://openjdk.org/jeps/472)
--- Security Manager is now disabled. ![JEP-486](https://openjdk.org/jeps/486)
+    - compact object headers ![JEP-450](https://openjdk.org/jeps/450)
+    - restricted use of JNI ![JEP-472](https://openjdk.org/jeps/472)
+    - Security Manager is now disabled. ![JEP-486](https://openjdk.org/jeps/486)
 - languages and syntax
--- switch, instanceof and primitive types ![JEP-488](https://openjdk.org/jeps/488)
--- ScopedValue to share immutable data between caller thread and child threads ![JEP-487](https://openjdk.org/jeps/487)
--- flexible constructor bodies (with prologue and epilogue) ![JEP-492](https://openjdk.org/jeps/492)
--- module import ![JEP-494](https://openjdk.org/jeps/494)
--- linking runtime image without JMOD ![JEP-493](https://openjdk.org/jeps/493)
+    - switch, instanceof and primitive types ![JEP-488](https://openjdk.org/jeps/488)
+    - ScopedValue to share immutable data between caller thread and child threads ![JEP-487](https://openjdk.org/jeps/487)
+    - flexible constructor bodies (with prologue and epilogue) ![JEP-492](https://openjdk.org/jeps/492)
+    - module import ![JEP-494](https://openjdk.org/jeps/494)
+    - linking runtime image without JMOD ![JEP-493](https://openjdk.org/jeps/493)
 - more structured concurrency and threading
 - deprecation and "end-of-life"
--- 32-bit x86 port deprecated ![JEP-501](https://openjdk.org/jeps/501)
--- removal of support for Windows (32-bit x86) ![JEP-479](https://openjdk.org/jeps/479)
+    - 32-bit x86 port deprecated ![JEP-501](https://openjdk.org/jeps/501)
+    - removal of support for Windows (32-bit x86) ![JEP-479](https://openjdk.org/jeps/479)
 
 ## What's available in Java 21 API
 New features available in Java 21 which we missed in Java 17 and earlier versions. Features, which are most notable and stand as the best candidates for frequent use, are listed below:
