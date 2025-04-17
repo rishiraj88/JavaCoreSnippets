@@ -12,7 +12,7 @@ public class RecordPatternsWithInstanceof {
 
     }
 
-    private static void printDetails(Item item) {
+    private static void printDetails(org.example.records.Item item) {
         if(item instanceof FoodItem(var name, var price)) {
             System.out.println("Food item with name " + name + " has price " + price);
         } else if(item instanceof DrinkItem(String name, double price)) {

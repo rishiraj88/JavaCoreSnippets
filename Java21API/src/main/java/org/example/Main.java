@@ -1,11 +1,11 @@
-package example;
+package org.example;
 
 import org.example.records.RecordPatternsWithInstanceof;
 import org.example.virtualthreads.ExecutorImpl;
 
 import java.util.Locale;
 
-import static java.util.FormatProcessor.FMT;
+//import static java.util.FormatProcessor.FMT;
 
 public class Main {
 
@@ -39,8 +39,8 @@ public class Main {
 
         System.out.println(string3);
 
-        var string4 = FMT."Product is \{product.productId()}: \{product.name()}, priced at $%.2f\{product.price()}";
-        System.out.println(string4);
+        //var string4 = FMT."Product is \{product.productId()}: \{product.name()}, priced at $%.2f\{product.price()}";
+        //System.out.println(string4);
 
         org.example.CollectionSequences.testCollectionSequences();
         RecordPatternsWithInstanceof.test();
