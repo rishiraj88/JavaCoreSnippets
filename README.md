@@ -30,6 +30,8 @@
 
 ## What's available in Java 21 API
 New features available in Java 21 which we missed in Java 17 and earlier versions. Features, which are most notable and stand as the best candidates for frequent use, are listed below:
+- Virtual threads (from Java 19)
+![Virtual threads demo](./assets/java21/virtualthreads.png)
 - Usage of `record` types in conditionals. Very useful with `if(reference instance Type)` tests.
 <pre>if(publicParameter instanceof SpecificType) {}</pre>
 - labels for `switch` cases. These are very similar to `instanceof` checks.
