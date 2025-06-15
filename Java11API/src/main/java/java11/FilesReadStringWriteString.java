@@ -2,12 +2,11 @@ package java11;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 /**
- * 
+ *
  * @author rishiraj
  * to read from and write to file
  */
@@ -20,6 +19,7 @@ public class FilesReadStringWriteString {
 			// Files.readString(path) method available since JDK 11
 			// Path.of(filePath) or Paths.get(filePath) can be used to get Path
 			String fileData = Files.readString(Path.of(filePath));
+			System.out.println("fileData:");
 			System.out.println(fileData);
 
 			String tmpFilePath = "tmp_"+ filePath;
@@ -29,8 +29,15 @@ public class FilesReadStringWriteString {
 			Files.writeString(Path.of(tmpFilePath),"new string added", StandardOpenOption.APPEND);
 			fileData = Files.readString(Path.of(tmpFilePath));
 			System.out.println(fileData);
-			
-		}catch(IOException e) 
+
+			tmpFilePath = "tmp_"+ filePath+"_2";
+		    Path path=	Path.of(tmpFilePath);
+			if(!Files.exists(path)) file.createNewFile();
+			// Files.writeString(path) method available since JDK 11
+			Files.writeString(path,"new string added", StandardOpenOption.APPEND);
+			fileData = Files.readString(path);
+			System.out.println(fileData);
+		}catch(IOException e)
 		{
 			e.printStackTrace();
 		}

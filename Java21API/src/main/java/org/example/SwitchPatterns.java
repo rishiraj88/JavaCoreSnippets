@@ -17,7 +17,7 @@ public class SwitchPatterns {
         return switch (o) {
             case Integer i -> String.format("Integer %d", i);
             case Long l -> String.format("Long %d", l);
-            case Double d -> String.format("Integer %f", d);
+            case Double d -> String.format("Double %f", d);
             case String s -> String.format("String %s", s);
             default -> o.toString();
         };

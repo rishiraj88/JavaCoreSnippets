@@ -16,16 +16,17 @@ package java14;
  *
  */
 public class RecordVsClass {
-	// No need to write boilerplate code in the form of a final class
-	record UserRecord(String name, String userId, int pin) {}
-	
+
 	public static void main(String[] args) {
+		// Instantiate a record instance
 		UserRecord userRecord = new UserRecord("Rishiraj","1323",152242);
 		System.out.print("""
 				::User Details:: 
 				Name:""");
-		System.out.println(" "+ userRecord.name);
+		System.out.println(" "+ userRecord.name());
 		System.out.print("User ID: ");
-		System.out.println(userRecord.userId);
+		System.out.println(userRecord.userId());
 	}
 }
+// No need to write boilerplate code in the form of a final class, simply declare a record this way
+record UserRecord(String name, String userId, int pin) {}

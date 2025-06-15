@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.records.RecordPatternsWithInstanceof;
 import org.example.virtualthreads.ExecutorImpl;
+import org.example.virtualthreads.ThreadOfVirtualImpl;
 
 import java.util.Locale;
 
@@ -42,10 +43,18 @@ public class Main {
         //var string4 = FMT."Product is \{product.productId()}: \{product.name()}, priced at $%.2f\{product.price()}";
         //System.out.println(string4);
 
-        org.example.CollectionSequences.testCollectionSequences();
+        // testing "sequenced collections" feature
+        CollectionSequences.testCollectionSequences();
+
+        // testing "record" with pattern matching in if-construct
         RecordPatternsWithInstanceof.test();
-        //ExecutorImpl.withoutVirtualThreads();
-        ExecutorImpl.withVirtualThreadsInJava21();
+
+        // testing Executors.newVirtualThreadPerTaskExecutor
+        ExecutorImpl.withVirtualThreadsInJava21(); // high performance
+        //ExecutorImpl.withoutVirtualThreads(); // quite slower
+
+        // testing Thread.ofVirtual()
+        ThreadOfVirtualImpl.main(null);
     }
 
 }

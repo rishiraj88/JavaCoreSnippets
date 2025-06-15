@@ -9,15 +9,13 @@ public class RecordPatternsWithInstanceof {
 
         printDetails(product1);
         printDetails(product2);
-
     }
 
-    private static void printDetails(org.example.records.Item item) {
+    private static void printDetails(Item item) {
         if(item instanceof FoodItem(var name, var price)) {
             System.out.println("Food item with name " + name + " has price " + price);
         } else if(item instanceof DrinkItem(String name, double price)) {
             System.out.println("Drink item with name " + name + " has price " + price);
         }
     }
-
 }

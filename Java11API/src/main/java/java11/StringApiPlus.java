@@ -23,7 +23,6 @@ public class StringApiPlus {
 		System.out.println("s2 stripped: >" + s2.strip() + "<");
 		System.out.println("s3 stripped: >" + s3.strip() + "<");
 
-
 		// stripLeading()
 		System.out.println("s1 stripLeading: >" + s1.stripLeading() + "<");
 		System.out.println("s2 stripLeading: >" + s2.stripLeading() + "<");
