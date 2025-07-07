@@ -1,7 +1,7 @@
 # Core Java: Code Library
-- programs and code snippets to showcase the might and versatility of Java platform (as of Core Java API), algorithms implemented using Java language (out of JavaSE), and the types & methods to refer & use in other projects and repositories.  
+- programs and code snippets to showcase the might and versatility of Java platform (as of Core Java API), algorithms implemented using Java language (out of JavaSE), and the types & methods to refer & use in other projects and repositories
 
-- First of all, let's start with some of the updates and advancements in Java library (aptly called Java API).
+- First of all, let's have a look at some of the updates and advancements in Java library (aptly called Java API).
 
 ## What's available in Java 24 API
 - improvement in performance and memory management
