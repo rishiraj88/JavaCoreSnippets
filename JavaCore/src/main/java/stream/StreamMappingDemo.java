@@ -13,9 +13,7 @@ public class StreamMappingDemo {
                         cust + " stays at " + addresses.stream().map(a ->a.toString()).collect(
                                 Collectors.joining(", ")
                         )
-                ))
-                ;
-
-
+                )
+        );
     }
 }
