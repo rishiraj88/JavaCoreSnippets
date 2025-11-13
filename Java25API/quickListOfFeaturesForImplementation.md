@@ -1,4 +1,4 @@
-# Frequently Used Features Available with Java 25 (added anew as well as modified against Java 21)
+# Frequently Used Features Available with Java 25 (added anew as well as modified post Java 21)
 JEP 470:	PEM Encodings of Cryptographic Objects (Preview)
 JEP 502:	Stable Values (Preview)
 JEP 503:	Remove the 32-bit x86 Port
