@@ -30,18 +30,18 @@ public class CollectionPlus {
 
 		// JDK 11
 		// Collection.toArray(IntFunction<T[]> generator )
-		integerArr = integerList.toArray(size -> new Integer[size]);
-		System.out.println("\nInteger array with List.toArray(size -> new Integer[size]: "+Arrays.toString(integerArr));
 		integerArr = integerList.toArray(Integer[] :: new);
-		System.out.println("Integer array with List.toArray(Integer[] :: new): "+Arrays.toString(integerArr));
-
+		System.out.println("\nInteger array with List.toArray(Integer[] :: new): "+Arrays.toString(integerArr));
+		integerArr = integerList.toArray(size -> new Integer[size]);
+		System.out.println("Integer array with List.toArray(size -> new Integer[size]: "+Arrays.toString(integerArr));
+		
 		// JDK 11
 		// Collection.toArray(IntFunction<T[]> generator )
-		sArr = sList.toArray(size -> new String[size]);
-		System.out.println("\nString array with List.toArray(size -> new String[size]): "+Arrays.toString(sArr));
 		sArr = sList.toArray(String[]:: new);
-		System.out.println("String array with List.toArray(String[]:: new): "+Arrays.toString(sArr));
-
+		System.out.println("\nString array with List.toArray(String[]:: new): "+Arrays.toString(sArr));
+		sArr = sList.toArray(size -> new String[size]);
+		System.out.println("String array with List.toArray(size -> new String[size]): "+Arrays.toString(sArr));
+		
 /*		// "JDK 8,9,10" style
 		// Collection.stream()
 		// Stream.toArray(IntFunction<A[]> generator);

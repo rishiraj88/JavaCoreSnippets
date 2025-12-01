@@ -18,7 +18,8 @@ import java.nio.file.StandardOpenOption;
  */
 public class HttpApiWithNewHttpClient {
 	public static void main(String[] args) throws IOException, InterruptedException {
-		// 1. GET request-response flow - START
+		
+		// ********* 1. GET request-response flow - START *********
 
 		// java.nio.file.Path#of(string) method to convert a string to a file path
 		var localFilePath = "httpClientLogs2024.txt";
@@ -44,9 +45,9 @@ public class HttpApiWithNewHttpClient {
 		Files.writeString(Path.of(localFilePath)
 				,response.statusCode() + "\n" + response.body()
 				, StandardOpenOption.APPEND);
-		// 1. GET request-response flow - DONE
+		// ********* 1. GET request-response flow - DONE *********
 
-		// 2. POST request-response flow - START
+		// ********* 2. POST request-response flow - START *********
 		var postEndpoint = "http://dummy.restapiexample.com/api/v1/create";
 
 		// "before Java 15" style
@@ -71,12 +72,12 @@ public class HttpApiWithNewHttpClient {
 		System.out.println(response.statusCode());
 		System.out.println(response.body());
 		Files.writeString(Path.of(localFilePath),"\n"+response.statusCode() + "\n" + response.body(), StandardOpenOption.APPEND);
-		// 2. POST request-response flow - DONE
+		// ********* 2. POST request-response flow - DONE *********
 
-		// 3. PUT request-response flow - START
+		// ********* 3. PUT request-response flow - START *********
 		var putEndpoint = "https://dummy.restapiexample.com/public/api/v1/update/21";
 
-	  	inputJson = "{ \"name\":\"rishi\", \"salary\":\"150000\", \"age\":\"32\" }";
+	  	inputJson = "{ \"name\":\"rishi\", \"salary\":\"150000\", \"age\":\"30\" }";
 
 		req = HttpRequest.newBuilder()
 				.uri(URI.create(putEndpoint ))
@@ -90,6 +91,6 @@ public class HttpApiWithNewHttpClient {
 		System.out.println(response.body());
 		// java.nio.file.Files.writeString() method is available since Java 11
 		Files.writeString(Path.of(localFilePath),"\n"+response.statusCode() + "\n" + response.body(), StandardOpenOption.APPEND);
-		// 3. PUT request-response flow - DONE
+		// ********* 3. PUT request-response flow - DONE *********
 	}
 }

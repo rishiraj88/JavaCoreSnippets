@@ -23,18 +23,10 @@ public class FilesReadStringWriteString {
 			System.out.println(fileData);
 
 			String tmpFilePath = "tmp_"+ filePath;
-			File file = Path.of(tmpFilePath).toFile();
-			if(!file.exists()) file.createNewFile();
-			// Files.writeString(path) method available since JDK 11
-			Files.writeString(Path.of(tmpFilePath),"new string added", StandardOpenOption.APPEND);
-			fileData = Files.readString(Path.of(tmpFilePath));
-			System.out.println(fileData);
-
-			tmpFilePath = "tmp_"+ filePath+"_2";
-		    Path path=	Path.of(tmpFilePath);
+			Path path=	Path.of(tmpFilePath);
+			File file = path.toFile();
 			if(!Files.exists(path)) file.createNewFile();
-			// Files.writeString(path) method available since JDK 11
-			Files.writeString(path,"new string added", StandardOpenOption.APPEND);
+			Files.writeString(path,"\n\nCustom string added", StandardOpenOption.APPEND);
 			fileData = Files.readString(path);
 			System.out.println(fileData);
 		}catch(IOException e)
