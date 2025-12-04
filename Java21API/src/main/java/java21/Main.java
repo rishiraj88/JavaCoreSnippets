@@ -1,8 +1,8 @@
-package org.example;
+package java21;
 
-import org.example.records.RecordPatternsWithInstanceof;
-import org.example.virtualthreads.ExecutorImpl;
-import org.example.virtualthreads.ThreadOfVirtualImpl;
+import java21.records.RecordPatternsWithInstanceof;
+import java21.virtualthreads.ExecutorImpl;
+import java21.virtualthreads.ThreadOfVirtualImpl;
 
 import java.util.Locale;
 

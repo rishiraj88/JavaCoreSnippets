@@ -1,4 +1,4 @@
-package org.example.virtualthreads;
+package java21.virtualthreads;
 
 import java.util.stream.IntStream;
 

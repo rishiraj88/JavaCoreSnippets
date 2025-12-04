@@ -1,4 +1,4 @@
-package org.example.virtualthreads;
+package java21.virtualthreads;
 
 import java.time.Duration;
 import java.util.concurrent.Executors;

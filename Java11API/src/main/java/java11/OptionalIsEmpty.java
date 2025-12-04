@@ -10,8 +10,7 @@ import java.util.Random;
 public class OptionalIsEmpty {
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
-		Optional o = Optional.of(" ");
-		o = Optional.empty();
+		Optional o = Optional.empty();
 
 		if(0 == new Random().nextInt(3)%2) {
 			o = Optional.of(" ");

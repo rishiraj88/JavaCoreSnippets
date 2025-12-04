@@ -1,4 +1,4 @@
-package org.example.records;
+package java21.records;
 
 public class RecordPatternsWithInstanceof {
 

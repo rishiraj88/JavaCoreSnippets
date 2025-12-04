@@ -1,4 +1,4 @@
-package org.example;
+package java21;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

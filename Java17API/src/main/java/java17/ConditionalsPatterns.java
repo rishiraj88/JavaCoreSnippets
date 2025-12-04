@@ -1,30 +1,17 @@
-package org.example;
+package java17;
 
-public class SwitchPatterns {
+public class ConditionalsPatterns {
     public static void main(String[] args) {
         Object obj = 4.50;
-        // Java 14 way
-        System.out.println(formatter(obj));
         // Java 17 way
         testTriangle(new Triangle(1, 1, 1));
-        // Java 21 way
-        System.out.println(formatterPatternSwitch(obj));
-    }
-
-
-    // Java 21 way
-    static String formatterPatternSwitch(Object o) {
-        return switch (o) {
-            case Integer i -> String.format("Integer %d", i);
-            case Long l -> String.format("Long %d", l);
-            case Double d -> String.format("Double %f", d);
-            case String s -> String.format("String %s", s);
-            default -> o.toString();
-        };
+        // Java 14 way
+        System.out.println(formatter(obj));
     }
 
     // Java 17 way
     static void testTriangle(Shape s) {
+        // defining `Triangle t` and invoking a method using it 
         if (s instanceof Triangle t && t.calculateArea() > 10)
 			System.out.println("Big triangle");
         else /*small triangle or not a triangle at all*/
@@ -73,6 +60,3 @@ abstract class Shape {
 
     abstract double calculateArea();
 }
-
-
-

@@ -1,6 +1,4 @@
-package java17;
-
-import java.awt.*;
+package java21;
 
 public class SwitchPatterns {
     public static void main(String[] args) {
@@ -9,14 +7,12 @@ public class SwitchPatterns {
         System.out.println(formatterPatternSwitch(obj));
         // Java 17 way
         testTriangle(new Triangle(1, 1, 1));
-        // Java 14 way
-        System.out.println(formatter(obj));
     }
-
 
     // Java 21 way
     static String formatterPatternSwitch(Object o) {
         return switch (o) {
+            // defining identifiers with various data types
             case Integer i -> String.format("Integer %d", i);
             case Long l -> String.format("Long %d", l);
             case Double d -> String.format("Integer %f", d);
@@ -27,30 +23,12 @@ public class SwitchPatterns {
 
     // Java 17 way
     static void testTriangle(Shape s) {
+        // defining `Triangle t` and invoking a method using it 
         if (s instanceof Triangle t && t.calculateArea() > 10)
 			System.out.println("Big triangle");
         else /*small triangle or not a triangle at all*/
 			System.out.println("Not a big triangle");
     }
-
-
-    // older way
-    static String formatter(Object o) {
-        String formatted = "sentinel";
-        if (o instanceof Integer i) { // new style of instanceof used here!!!
-            formatted = String.format("Integer %d", i);
-        } else if (o instanceof Long l) { // new style of instanceof used here!!!
-            formatted = String.format("Long %d", l);
-        } else if (o instanceof Double d) { // new style of instanceof used here!!!
-            formatted = String.format("Double %f", d);
-        } else if (o instanceof String s) { // new style of instanceof used here!!!
-            formatted = String.format("String %s", s);
-        } else {
-            formatted = "unknown";
-        }
-        return formatted;
-    }
-}
 
 class Triangle extends Shape {
     Triangle(float a, float b, float c) {
@@ -74,7 +52,5 @@ abstract class Shape {
     }
 
     abstract double calculateArea();
+    }
 }
-
-
-
